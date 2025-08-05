@@ -1,0 +1,1209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <title>The Complete Guide to Indexed Universal Life Insurance</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        /* Enhanced mobile compatibility */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        html {
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f8fafc;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        
+        .page {
+            width: 100vw;
+            min-width: 100%;
+            min-height: 100vh;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            page-break-after: always;
+            padding: 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        
+        /* Cover Page */
+        .cover {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #06b6d4 100%);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+            position: relative;
+        }
+        
+        .cover::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
+                radial-gradient(circle at 40% 40%, rgba(120, 119, 255, 0.2) 0%, transparent 50%);
+        }
+        
+        .logo {
+            margin-bottom: 40px;
+            z-index: 1;
+        }
+        
+        .logo-circle {
+            width: 80px;
+            height: 80px;
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+            font-size: 36px;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            /* Force consistent emoji rendering */
+            font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+            text-rendering: optimizeLegibility;
+            -webkit-font-feature-settings: "liga";
+            font-feature-settings: "liga";
+        }
+        
+        .company-name {
+            font-size: 42px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+        }
+        
+        .tagline {
+            font-size: 16px;
+            font-weight: 300;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+        
+        .cover h1 {
+            font-size: 48px;
+            font-weight: 700;
+            margin: 60px 0 20px;
+            line-height: 1.2;
+            z-index: 1;
+        }
+        
+        .cover .subtitle {
+            font-size: 20px;
+            font-weight: 300;
+            opacity: 0.9;
+            margin-bottom: 60px;
+            z-index: 1;
+        }
+        
+        .highlight-box {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            z-index: 1;
+        }
+        
+        .highlight-box h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+        
+        .highlight-box p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        /* Content Pages */
+        .content {
+            padding: 40px 5% 50px;
+            min-height: auto;
+            max-height: none;
+        }
+        
+        .header {
+            border-bottom: 4px solid;
+            border-image: linear-gradient(135deg, #3b82f6, #06b6d4) 1;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .page-number {
+            position: absolute;
+            bottom: 20px;
+            right: 5%;
+            color: #6b7280;
+            font-size: clamp(14px, 1.5vw, 18px);
+        }
+        
+        h1 {
+            color: #1e3a8a;
+            font-size: clamp(32px, 4vw, 48px);
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        
+        h2 {
+            color: #1e3a8a;
+            font-size: clamp(26px, 3vw, 36px);
+            font-weight: 600;
+            margin: 25px 0 20px;
+        }
+        
+        h3 {
+            color: #3b82f6;
+            font-size: clamp(20px, 2.5vw, 28px);
+            font-weight: 600;
+            margin: 20px 0 15px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            font-size: clamp(16px, 2vw, 20px);
+            line-height: 1.6;
+        }
+        
+        .intro-text {
+            font-size: clamp(18px, 2.2vw, 22px);
+            color: #4b5563;
+            font-style: italic;
+            margin-bottom: 25px;
+            padding: 20px;
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            border-left: 4px solid #3b82f6;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .benefit-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .benefit-card {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid;
+            border-image: linear-gradient(135deg, #3b82f6, #06b6d4) 1;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.05), rgba(6, 182, 212, 0.05));
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+        
+        .benefit-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.15);
+        }
+        
+        .benefit-card:hover::before {
+            opacity: 1;
+        }
+        
+        .benefit-number {
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .benefit-card h4 {
+            color: #1e3a8a;
+            font-size: clamp(18px, 2.2vw, 24px);
+            font-weight: 600;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .benefit-card p {
+            font-size: clamp(14px, 1.8vw, 18px);
+            color: #4b5563;
+            margin-bottom: 0;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 20px 0;
+            gap: 20px;
+        }
+        
+        .step {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, white, #f8fafc);
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+        
+        .step-number {
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            margin: 0 auto 15px;
+        }
+        
+        .step h4 {
+            color: #1e3a8a;
+            font-size: clamp(16px, 2vw, 20px);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        .step p {
+            font-size: clamp(14px, 1.8vw, 18px);
+            color: #4b5563;
+        }
+        
+        .callout-box {
+            background: linear-gradient(135deg, #3b82f6, #1e3a8a, #06b6d4);
+            color: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 25px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .callout-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 30% 70%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 70% 30%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        }
+        
+        .callout-box h3 {
+            color: white;
+            font-size: clamp(20px, 2.5vw, 28px);
+            margin-bottom: 15px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .callout-box p {
+            font-size: clamp(16px, 2vw, 20px);
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .faq-item {
+            background: linear-gradient(135deg, white, #f8fafc);
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 10px rgba(59, 130, 246, 0.08);
+            border: 1px solid rgba(59, 130, 246, 0.1);
+        }
+        
+        .faq-question {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .faq-answer {
+            color: #4b5563;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+        
+        .contact-section {
+            background: linear-gradient(135deg, #1e3a8a, #3b82f6, #06b6d4);
+            color: white;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .contact-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+        }
+        
+        .contact-section h2 {
+            color: white;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .contact-item h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #bfdbfe;
+        }
+        
+        .contact-item p {
+            font-size: 14px;
+            margin-bottom: 0;
+        }
+        
+        .misconception-item {
+            background: linear-gradient(135deg, #fef2f2, #fee2e2);
+            border-left: 4px solid #ef4444;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .misconception-title {
+            color: #dc2626;
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+        
+        .truth {
+            color: #065f46;
+            font-style: italic;
+        }
+        
+        /* Chart Styles */
+        .chart-container {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+            padding: 15px;
+            border-radius: 12px;
+            margin: 15px 0;
+            border: 2px solid rgba(59, 130, 246, 0.1);
+        }
+        
+        .chart-title {
+            color: #1e3a8a;
+            font-size: 18px;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+        
+        .performance-chart {
+            width: 100%;
+            height: 160px;
+            background: white;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(59, 130, 246, 0.1);
+        }
+        
+        .comparison-table th {
+            background: linear-gradient(135deg, #3b82f6, #06b6d4);
+            color: white;
+            padding: 15px;
+            font-weight: 600;
+            text-align: center;
+        }
+        
+        .comparison-table td {
+            padding: 15px;
+            text-align: center;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        
+        .comparison-table tr:nth-child(even) {
+            background: linear-gradient(135deg, #f8fafc, #e2e8f0);
+        }
+        
+        .vs-badge {
+            background: linear-gradient(135deg, #10b981, #059669);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 600;
+            display: inline-block;
+        }
+        
+        .protection-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        
+        .protection-point {
+            background: linear-gradient(135deg, #f0f9ff, #e0f2fe);
+            padding: 18px;
+            border-radius: 10px;
+            border-left: 4px solid;
+            border-image: linear-gradient(135deg, #3b82f6, #06b6d4) 1;
+        }
+        
+        .protection-point h4 {
+            color: #1e3a8a;
+            font-size: clamp(18px, 2.2vw, 24px);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+        
+        @media (max-width: 768px) and (orientation: portrait) {
+            .benefit-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .process-steps {
+                flex-direction: column;
+            }
+            
+            .protection-points {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-info {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            
+            .page {
+                font-size: 12px;
+            }
+            
+            h1 {
+                font-size: 24px !important;
+            }
+            
+            h2 {
+                font-size: 20px !important;
+            }
+            
+            p {
+                font-size: 12px !important;
+            }
+        }
+
+        @media (orientation: landscape) and (max-width: 1024px) {
+            .benefit-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .process-steps {
+                flex-direction: row;
+            }
+            
+            .protection-points {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .contact-info {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        
+        /* Android-specific fixes */
+        @media screen and (-webkit-min-device-pixel-ratio: 1) {
+            body {
+                -webkit-text-size-adjust: none;
+            }
+        }
+
+        @media print {
+            body { background: white; }
+            .page { box-shadow: none; margin: 0; width: 8.5in; height: 11in; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Page 1: Cover -->
+    <div class="page cover">
+        <div class="logo">
+            <div class="logo-circle">🛡️</div>
+            <div class="company-name">J. FORD</div>
+            <div class="tagline">LIFE SOLUTIONS</div>
+        </div>
+        
+        <h1>The Complete Guide to<br>Indexed Universal Life<br>Insurance</h1>
+        <p class="subtitle">The Smartest Investment You've Never Heard Of</p>
+        
+        <div class="highlight-box">
+            <h3>Four Key Protections IUL Provides:</h3>
+            <p>Protect your family/income • Market risk protection • Protection from taxes • Protection from outliving retirement</p>
+        </div>
+    </div>
+
+    <!-- Page 2: What is IUL -->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <h1>What is Indexed Universal Life Insurance?</h1>
+            </div>
+            
+            <p class="intro-text">
+                We are taking advantage of section 7702 of the IRS code to overfund a life insurance contract and pull-out tax-free money for retirement. Think of it like a ROTH IRA married to a life insurance policy.
+            </p>
+            
+            <h2>How an IUL Works</h2>
+            
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h4>Pay Premiums</h4>
+                    <p>Part goes to life insurance coverage, part builds cash value using post-tax dollars</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h4>Index Crediting</h4>
+                    <p>Cash value grows based on market index performance with caps, floors, and annual reset</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h4>Access Funds</h4>
+                    <p>Borrow or withdraw from cash value tax-free for any purpose</p>
+                </div>
+            </div>
+            
+            <div class="callout-box">
+                <h3>Kill Two Birds with One Stone</h3>
+                <p>Provide a death benefit AND provide tax-free retirement income. This vehicle provides protection in four key areas for your financial future.</p>
+            </div>
+            
+            <div class="protection-points">
+                <div class="protection-point">
+                    <h4>1. Protecting Your Income and Family</h4>
+                    <p>100% income tax-free death benefit that's portable and creditor-proof</p>
+                </div>
+                <div class="protection-point">
+                    <h4>2. Protecting from Market Risk</h4>
+                    <p>Never lose money with caps and floors, plus annual lock and reset</p>
+                </div>
+                <div class="protection-point">
+                    <h4>3. Protecting Against Taxes</h4>
+                    <p>Tax-free supplemental retirement income when taxes are likely rising</p>
+                </div>
+                <div class="protection-point">
+                    <h4>4. Protection from Outliving Income</h4>
+                    <p>Built-in safeguards ensure you never run out of money</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">2</div>
+    </div>
+
+    <!-- Page 3: Historical Performance -->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <h1>Historical Market Performance</h1>
+            </div>
+            
+            <div class="chart-container">
+                <div class="chart-title">Historical Performance - 20 Year ROI Average</div>
+                <div class="performance-chart">
+                    <svg width="100%" height="100%" viewBox="0 0 700 160">
+                        <!-- Grid lines -->
+                        <defs>
+                            <linearGradient id="greenGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#10b981;stop-opacity:0.8"/>
+                                <stop offset="100%" style="stop-color:#10b981;stop-opacity:0.3"/>
+                            </linearGradient>
+                            <linearGradient id="purpleGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.8"/>
+                                <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.3"/>
+                            </linearGradient>
+                            <linearGradient id="orangeGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:0.8"/>
+                                <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:0.3"/>
+                            </linearGradient>
+                            <linearGradient id="blueGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.8"/>
+                                <stop offset="100%" style="stop-color:#06b6d4;stop-opacity:0.3"/>
+                            </linearGradient>
+                        </defs>
+                        
+                        <!-- Y-axis labels -->
+                        <text x="30" y="20" fill="#6b7280" font-size="10">$600,000</text>
+                        <text x="30" y="35" fill="#6b7280" font-size="10">$550,000</text>
+                        <text x="30" y="50" fill="#6b7280" font-size="10">$500,000</text>
+                        <text x="30" y="65" fill="#6b7280" font-size="10">$450,000</text>
+                        <text x="30" y="80" fill="#6b7280" font-size="10">$400,000</text>
+                        <text x="30" y="95" fill="#6b7280" font-size="10">$350,000</text>
+                        <text x="30" y="110" fill="#6b7280" font-size="10">$300,000</text>
+                        <text x="30" y="125" fill="#6b7280" font-size="10">$250,000</text>
+                        <text x="30" y="140" fill="#6b7280" font-size="10">$200,000</text>
+                        
+                        <!-- Grid lines -->
+                        <line x1="50" y1="20" x2="650" y2="20" stroke="#e5e7eb" stroke-width="1"/>
+                        <line x1="50" y1="50" x2="650" y2="50" stroke="#e5e7eb" stroke-width="1"/>
+                        <line x1="50" y1="80" x2="650" y2="80" stroke="#e5e7eb" stroke-width="1"/>
+                        <line x1="50" y1="110" x2="650" y2="110" stroke="#e5e7eb" stroke-width="1"/>
+                        <line x1="50" y1="140" x2="650" y2="140" stroke="#e5e7eb" stroke-width="1"/>
+                        
+                        <!-- S&P 500 IUL Line (Green) - Top performer -->
+                        <path d="M50,140 L80,135 L110,130 L140,125 L170,120 L200,110 L230,105 L260,95 L290,85 L320,75 L350,65 L380,55 L410,45 L440,40 L470,35 L500,30 L530,25 L560,22 L590,20 L620,18 L650,15" 
+                              stroke="#10b981" stroke-width="3" fill="none"/>
+                        
+                        <!-- S&P 500 Market Line (Purple) - Second performer -->
+                        <path d="M50,140 L80,138 L110,135 L140,132 L170,130 L200,125 L230,122 L260,118 L290,115 L320,110 L350,105 L380,100 L410,95 L440,90 L470,85 L500,80 L530,75 L560,70 L590,65 L620,60 L650,55" 
+                              stroke="#8b5cf6" stroke-width="3" fill="none"/>
+                        
+                        <!-- NYL Line (Orange) - Third performer -->
+                        <path d="M50,140 L80,139 L110,138 L140,136 L170,135 L200,133 L230,131 L260,129 L290,127 L320,125 L350,123 L380,121 L410,119 L440,117 L470,115 L500,113 L530,111 L560,109 L590,107 L620,105 L650,103" 
+                              stroke="#f59e0b" stroke-width="3" fill="none"/>
+                        
+                        <!-- CD Line (Blue) - Flat performer -->
+                        <path d="M50,140 L80,140 L110,140 L140,140 L170,140 L200,140 L230,140 L260,140 L290,140 L320,140 L350,140 L380,140 L410,140 L440,140 L470,140 L500,140 L530,140 L560,140 L590,140 L620,140 L650,140" 
+                              stroke="#06b6d4" stroke-width="3" fill="none"/>
+                        
+                        <!-- X-axis years -->
+                        <text x="50" y="155" fill="#6b7280" font-size="10">'99</text>
+                        <text x="140" y="155" fill="#6b7280" font-size="10">'03</text>
+                        <text x="230" y="155" fill="#6b7280" font-size="10">'07</text>
+                        <text x="320" y="155" fill="#6b7280" font-size="10">'11</text>
+                        <text x="410" y="155" fill="#6b7280" font-size="10">'15</text>
+                        <text x="500" y="155" fill="#6b7280" font-size="10">'19</text>
+                        
+                        <!-- Legend with performance data -->
+                        <rect x="200" y="25" width="15" height="3" fill="#10b981"/>
+                        <text x="220" y="33" fill="#4b5563" font-size="11" font-weight="600">S&P 500 IUL - 8.37%</text>
+                        <text x="380" y="33" fill="#10b981" font-size="11" font-weight="700">$585,986</text>
+                        
+                        <rect x="200" y="40" width="15" height="3" fill="#8b5cf6"/>
+                        <text x="220" y="48" fill="#4b5563" font-size="11" font-weight="600">S&P 500 Market - 5.24%</text>
+                        <text x="380" y="48" fill="#8b5cf6" font-size="11" font-weight="700">$333,287</text>
+                        
+                        <rect x="200" y="55" width="15" height="3" fill="#f59e0b"/>
+                        <text x="220" y="63" fill="#4b5563" font-size="11" font-weight="600">NYL - 4.50%</text>
+                        <text x="380" y="63" fill="#f59e0b" font-size="11" font-weight="700">$262,357</text>
+                        
+                        <rect x="200" y="70" width="15" height="3" fill="#06b6d4"/>
+                        <text x="220" y="78" fill="#4b5563" font-size="11" font-weight="600">CD - 1%</text>
+                        <text x="380" y="78" fill="#06b6d4" font-size="11" font-weight="700">$124,466</text>
+                    </svg>
+                </div>
+            </div>
+            
+            <h2>Key Performance Benefits</h2>
+            
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">📈</div>
+                    <h4>Never Lose Money</h4>
+                    <p>65-year historical look back shows consistent positive returns with floor protection</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">🔒</div>
+                    <h4>Annual Lock and Reset</h4>
+                    <p>Gains are locked in annually and market losses don't affect your cash value</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">⚖️</div>
+                    <h4>Cap and Floor Protection</h4>
+                    <p>Upside potential with a cap rate, downside protection with a floor rate</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">📊</div>
+                    <h4>Superior Long-term Returns</h4>
+                    <p>Historical average shows IUL outperforming direct market exposure</p>
+                </div>
+            </div>
+            
+            <div class="callout-box">
+                <h3>Are Your Retirement Assets Prepared for the Next Market Downturn?</h3>
+                <p>IUL provides market participation with complete downside protection - your cash value never decreases due to market losses.</p>
+            </div>
+        </div>
+        <div class="page-number">3</div>
+    </div>
+
+    <!-- Page 4: 10 Key Benefits -->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <h1>10 Key Benefits of an IUL</h1>
+            </div>
+            
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <div class="benefit-number">1</div>
+                    <h4>Tax-Deferred Growth</h4>
+                    <p>Your cash value grows without yearly taxes, letting interest compound faster over time.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">2</div>
+                    <h4>Downside Protection</h4>
+                    <p>If the market drops, you still earn a minimum rate (often 0%), so you don't lose cash value.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">3</div>
+                    <h4>Upside Potential</h4>
+                    <p>When the index rises, you capture part of its gains up to your policy's cap rate.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">4</div>
+                    <h4>Flexible Premiums</h4>
+                    <p>Adjust how much you pay within limits. Pay more to build value faster or less when needed.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">5</div>
+                    <h4>Death Benefit Protection</h4>
+                    <p>100% income tax-free death benefit that's portable and creditor-proof to protect your family.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">6</div>
+                    <h4>Tax-Free Loans</h4>
+                    <p>Give yourself a loan from the death benefit into your wallet without a taxable event.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">7</div>
+                    <h4>No Annual Limits</h4>
+                    <p>Unlike IRAs or 401(k)s, IULs don't have IRS contribution caps for additional investments.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">8</div>
+                    <h4>Long-Term Care Options</h4>
+                    <p>Some IULs offer riders that pay for long-term care expenses if needed.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">9</div>
+                    <h4>Credit-Friendly Loans</h4>
+                    <p>Policy loans don't show on credit reports, so they won't affect your borrowing power.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <div class="benefit-number">10</div>
+                    <h4>Legacy Planning</h4>
+                    <p>Use as an estate-planning tool to pay estate taxes or leave tax-free gifts to heirs.</p>
+                </div>
+            </div>
+            
+            <div class="callout-box">
+                <h3>You OR Your Beneficiary Will ALWAYS Get More Money Out</h3>
+                <p>Built-in safeguards and guarantees ensure that you or your beneficiaries will always receive more money from the IUL than was ever put into it.</p>
+            </div>
+        </div>
+        <div class="page-number">4</div>
+    </div>
+
+    <!-- Page 5: IUL vs 401k Comparison -->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <h1>IUL vs. Traditional Retirement Accounts</h1>
+            </div>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th style="width: 25%;">&nbsp;</th>
+                        <th style="width: 35%; background: #6b7280;">457/401K</th>
+                        <th style="width: 5%; background: #10b981;"><span class="vs-badge">VS</span></th>
+                        <th style="width: 35%; background: linear-gradient(135deg, #3b82f6, #06b6d4);">✓ IUL ✓</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Death Benefit</td>
+                        <td style="font-size: 14px;">Account value minus taxes</td>
+                        <td></td>
+                        <td style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); color: #166534; font-weight: 600; font-size: 14px;">Enhanced death benefit</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Market Risk</td>
+                        <td style="font-size: 14px;">Subject to market volatility</td>
+                        <td></td>
+                        <td style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); color: #166534; font-weight: 600; font-size: 14px;">Market growth with protection</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Taxes</td>
+                        <td style="font-size: 14px;">Subject to tax rates</td>
+                        <td></td>
+                        <td style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); color: #166534; font-weight: 600; font-size: 14px;">100% tax free*</td>
+                    </tr>
+                    <tr>
+                        <td style="font-weight: 600; color: #1e3a8a; font-size: 14px;">Outlive safeguards?</td>
+                        <td style="font-size: 14px;">None</td>
+                        <td></td>
+                        <td style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); color: #166534; font-weight: 600; font-size: 14px;">Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <p style="font-size: 12px; color: #6b7280; margin: 5px 0;">* If the policy stays in force for life</p>
+            
+            <h2 style="font-size: 20px; margin: 15px 0 10px;">Key IUL Advantages</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin: 10px 0;">
+                <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 15px; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h4 style="color: #166534; font-size: 16px; margin: 0 0 8px 0;">💰 Tax-Free Income</h4>
+                    <p style="font-size: 13px; margin: 0; color: #4b5563;">Tax-free retirement income vs. taxable withdrawals</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 15px; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h4 style="color: #166534; font-size: 16px; margin: 0 0 8px 0;">🛡️ Death Benefit</h4>
+                    <p style="font-size: 13px; margin: 0; color: #4b5563;">Built-in life insurance protection included</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 15px; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h4 style="color: #166534; font-size: 16px; margin: 0 0 8px 0;">📈 Market Protection</h4>
+                    <p style="font-size: 13px; margin: 0; color: #4b5563;">Upside potential with downside protection</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 15px; border-radius: 8px; border-left: 4px solid #10b981;">
+                    <h4 style="color: #166534; font-size: 16px; margin: 0 0 8px 0;">♾️ Longevity Guard</h4>
+                    <p style="font-size: 13px; margin: 0; color: #4b5563;">Never outlive your supplemental income</p>
+                </div>
+            </div>
+        </div>
+        <div class="page-number">5</div>
+    </div>
+
+    <!-- Page 6: Tax Protection -->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <h1>Protection Against Rising Taxes</h1>
+            </div>
+            
+            <p class="intro-text">
+                Are taxes going up or down? With our national debt at unprecedented levels, tax rates are likely to increase. IUL provides a hedge against future tax increases.
+            </p>
+            
+            <div class="chart-container">
+                <div class="chart-title">National Debt Visualization</div>
+                <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; align-items: end; height: 120px; padding: 15px;">
+                    <div style="text-align: center;">
+                        <div style="height: 30px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); border-radius: 8px; margin-bottom: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;">$1T</div>
+                        <p style="font-size: 12px; margin: 0;">$1 Trillion</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="height: 60px; background: linear-gradient(135deg, #f59e0b, #d97706); border-radius: 8px; margin-bottom: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;">$15T</div>
+                        <p style="font-size: 12px; margin: 0;">$15 Trillion</p>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="height: 90px; background: linear-gradient(135deg, #dc2626, #991b1b); border-radius: 8px; margin-bottom: 8px; display: flex; align-items: center; justify-content: center; color: white; font-weight: bold; font-size: 12px;">$35T+</div>
+                        <p style="font-size: 12px; margin: 0;">Current National Debt</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h2>How IUL Protects Against Taxes</h2>
+            
+            <div class="protection-points">
+                <div class="protection-point">
+                    <h4>Tax-Free Retirement Income</h4>
+                    <p>You'll supplement your retirement with tax-free income, regardless of future tax rates</p>
+                </div>
+                <div class="protection-point">
+                    <h4>Post-Tax Funding</h4>
+                    <p>The IUL is funded with post-tax dollars, not pre-tax, so withdrawals come out tax-free</p>
+                </div>
+                <div class="protection-point">
+                    <h4>Strategic Loan Structure</h4>
+                    <p>Give yourself a loan from the death benefit into your wallet - it's not taxable income</p>
+                </div>
+                <div class="protection-point">
+                    <h4>Death Benefit Trade-off</h4>
+                    <p>There's a trade-off between death benefit and tax-free income - you choose the balance</p>
+                </div>
+            </div>
+            
+            <div class="callout-box">
+                <h3>Tax-Free vs. Tax-Deferred</h3>
+                <p>While 401(k)s and IRAs defer taxes to retirement (when rates may be higher), IUL provides completely tax-free access to your money through policy loans.</p>
+            </div>
+        </div>
+        <div class="page-number">6</div>
+    </div>
+
+    <!-- Page 7: Real IUL Scenario -->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <h1>IUL Case Study - Wealth Building in Action</h1>
+            </div>
+            
+            <div class="callout-box">
+                <h3>Client Profile: 40-Year-Old Healthy Male</h3>
+                <p>Monthly Contribution: $1,000 • Contribution Period: 25 years (age 40–65) • Total Investment: $300,000</p>
+            </div>
+            
+            <h2>Phase 1: Accumulation (Age 40–65)</h2>
+            <p>Your monthly $1,000 contribution compounds at <strong>7.23% annually</strong> for 25 years with downside protection.</p>
+            
+            <div style="background: linear-gradient(135deg, #f0fdf4, #dcfce7); padding: 20px; border-radius: 12px; margin: 15px 0; text-align: center; border-left: 4px solid #10b981;">
+                <h3 style="color: #166534; font-size: 24px; margin-bottom: 10px;">🔵 Cash Value at Age 65</h3>
+                <p style="font-size: 32px; font-weight: bold; color: #166534; margin: 0;">$810,191</p>
+                <p style="font-size: 14px; color: #4b5563; margin: 5px 0 0 0;">After 25 years of contributions and compounding</p>
+            </div>
+            
+            <h2>Phase 2: Tax-Free Retirement Income (Age 66–100)</h2>
+            <p>Begin withdrawing <strong>$6,704 per month</strong> ($80,453 annually) completely tax-free for 35 years.</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; margin: 20px 0;">
+                <div style="background: linear-gradient(135deg, #eff6ff, #dbeafe); padding: 15px; border-radius: 10px; text-align: center; border-left: 4px solid #3b82f6;">
+                    <h4 style="color: #1e3a8a; font-size: 16px; margin-bottom: 8px;">💰 Total Received</h4>
+                    <p style="font-size: 20px; font-weight: bold; color: #1e3a8a; margin: 0;">$2,815,856</p>
+                    <p style="font-size: 12px; color: #4b5563;">Tax-free income over 35 years</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #f0f9ff, #e0f2fe); padding: 15px; border-radius: 10px; text-align: center; border-left: 4px solid #06b6d4;">
+                    <h4 style="color: #1e3a8a; font-size: 16px; margin-bottom: 8px;">📊 Return Ratio</h4>
+                    <p style="font-size: 20px; font-weight: bold; color: #1e3a8a; margin: 0;">9.4x</p>
+                    <p style="font-size: 12px; color: #4b5563;">$300K invested → $2.8M received</p>
+                </div>
+                
+                <div style="background: linear-gradient(135deg, #fefce8, #fef3c7); padding: 15px; border-radius: 10px; text-align: center; border-left: 4px solid #f59e0b;">
+                    <h4 style="color: #1e3a8a; font-size: 16px; margin-bottom: 8px;">🛡️ Protection</h4>
+                    <p style="font-size: 20px; font-weight: bold; color: #1e3a8a; margin: 0;">$0</p>
+                    <p style="font-size: 12px; color: #4b5563;">Market losses (downside protected)</p>
+                </div>
+            </div>
+            
+            <h2>Sample Monthly Income Timeline</h2>
+            
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin: 15px 0;">
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h4 style="color: #1e3a8a; font-size: 16px; margin-bottom: 10px;">🎯 First Year of Retirement (Age 66)</h4>
+                    <div style="font-size: 14px; color: #4b5563;">
+                        <p><strong>Month 1:</strong> Receive $6,704.42 tax-free</p>
+                        <p><strong>Month 6:</strong> Receive $6,704.42 tax-free</p>
+                        <p><strong>Month 12:</strong> Receive $6,704.42 tax-free</p>
+                        <p style="color: #10b981; font-weight: 600;">Consistent monthly income!</p>
+                    </div>
+                </div>
+                
+                <div style="background: white; padding: 15px; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.1);">
+                    <h4 style="color: #1e3a8a; font-size: 16px; margin-bottom: 10px;">🏆 Mid-Retirement (Age 80)</h4>
+                    <div style="font-size: 14px; color: #4b5563;">
+                        <p><strong>Still receiving:</strong> $6,704.42/month</p>
+                        <p><strong>Total received so far:</strong> $1.2M+</p>
+                        <p><strong>Tax burden:</strong> $0</p>
+                        <p style="color: #10b981; font-weight: 600;">Retirement security assured!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="callout-box">
+                <h3>The Bottom Line</h3>
+                <p>Invest $300K over 25 years → Receive $2.8M tax-free over retirement. Plus death benefit protection for your family throughout!</p>
+            </div>
+        </div>
+        <div class="page-number">7</div>
+    </div>
+
+    <!-- Page 8: Contact/Call to Action -->
+    <div class="page">
+        <div class="content">
+            <div class="header">
+                <h1>Take the Next Step</h1>
+            </div>
+            
+            <p class="intro-text">
+                Ready to explore how an Indexed Universal Life policy could fit into your financial strategy? Let's discuss your specific goals and see if an IUL is the right solution for you.
+            </p>
+            
+            <h2>Why Choose J. Ford Life Solutions?</h2>
+            
+            <div class="benefit-grid">
+                <div class="benefit-card">
+                    <h4>🎯 Personalized Approach</h4>
+                    <p>We take time to understand your unique financial situation and goals before recommending any solution.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h4>📊 Comprehensive Analysis</h4>
+                    <p>We'll compare multiple carriers and policies to find the best rates, terms, and features for your needs.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h4>🛡️ Ongoing Support</h4>
+                    <p>Our relationship doesn't end at the sale. We provide ongoing policy management and reviews.</p>
+                </div>
+                
+                <div class="benefit-card">
+                    <h4>🏆 Expert Guidance</h4>
+                    <p>Professional expertise helping clients build wealth and protect their families through smart insurance strategies.</p>
+                </div>
+            </div>
+            
+            <div class="callout-box">
+                <h3>Schedule Your Free Consultation Today</h3>
+                <p>Let's discuss how an IUL could help you build tax-deferred wealth, protect your downside, and leave a lasting legacy for your family.</p>
+            </div>
+            
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q1: What index does an IUL use?</div>
+                <div class="faq-answer">A: Most use the S&P 500 or a blend of major U.S. indexes. You'll pick from options your insurer offers.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q2: How fast does cash value grow?</div>
+                <div class="faq-answer">A: Growth depends on index performance, your cap rate, and policy fees. Historical average caps range from 6–10%.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q3: Are policy loans really tax-free?</div>
+                <div class="faq-answer">A: Yes, as long as the policy remains in force and you don't let it lapse.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q4: What happens if I stop paying premiums?</div>
+                <div class="faq-answer">A: You can use cash value to cover costs. But if cash value falls to zero, the policy will lapse.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q5: Can I withdraw cash instead of taking a loan?</div>
+                <div class="faq-answer">A: Yes. Withdrawals reduce your cash value and death benefit and may have tax consequences if you exceed premiums paid.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q6: Is there an age limit to buy an IUL?</div>
+                <div class="faq-answer">A: Most insurers issue policies up to age 75, but terms vary by company.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q7: How does the cap and floor system work?</div>
+                <div class="faq-answer">A: You participate in market gains up to a cap (typically 8-12%) and never lose money due to a floor (typically 0%). Gains are locked in annually and reset each year.</div>
+            </div>
+            
+            <div class="faq-item">
+                <div class="faq-question">Q8: What happens if I need access to my money?</div>
+                <div class="faq-answer">A: You can borrow against your cash value tax-free, or make withdrawals. Policy loans don't appear on credit reports and don't require approval.</div>
+            </div>
+            
+            <div class="contact-section">
+                <h2>Ready to Secure Your Financial Future?</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>📞 Phone - Josh Ford</h4>
+                        <p>386-846-2783</p>
+                        <p style="font-size: 12px; opacity: 0.8;">Call today for immediate assistance and to schedule your consultation</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>✉️ Email - Josh Ford</h4>
+                        <p>FordJosh.JTF@gmail.com</p>
+                        <p style="font-size: 12px; opacity: 0.8;">Send Josh your questions today and we'll respond promptly</p>
+                    </div>
+                </div>
+                
+                <p style="margin-top: 30px; font-size: 14px; opacity: 0.8;">
+                    This material is for informational purposes only and should not be considered as tax, legal, or investment advice. Please consult with qualified professionals regarding your specific situation.
+                </p>
+            </div>
+        </div>
+        <div class="page-number">8</div>
+    </div>
+</body>
+</html>
